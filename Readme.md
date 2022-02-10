@@ -3,7 +3,7 @@
 
 # Extracting Modus Operandi from court documents
 
-### Steps taken in notebook:
+## Steps taken in notebook:
 * Import all needed libraries
 
 #### Data Preparation:
