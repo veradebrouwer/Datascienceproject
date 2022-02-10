@@ -1,12 +1,20 @@
 # Data Science Project 2021/2022
 ## Group F2
 
-### Huidig plan:
-Scrape tweets van 'betrouwbare twitteraars' (Saskia Belleman, Masha de Jong, Lieke Jongbloed, ...)
+## Steps taken in notebook:
+* Import all needed libraries
 
-Haal hier informatie uit (Onderwerp, belangrijke figuren in proces, vonnis, ...)
-Misschien zelfs een 'samenvatting'?
-    (namen zijn altijd voornaam, 1 hoofdletter met punt volgend, is te herkennen)
+### Data Preparation:
+* Extract all court convictions from rechtspraak.nl, regarding a search term. These convictions are then put in a DataFrame, with the ID, Text \& Date as columns. *This takes a very long time*
+* Load the vehicle file to extract the types and labels.
+* Add ruler to pipeline
+* Establish list of irrelevant entities & 'prefixes'
+* Extract route from court conviction, put into dataframe
+* Extract distict vehicles per court case
 
-Creeer deliverable voor analist om snel informatie over een bepaald onderwerp te kunnen vinden 
-
+### Similarity, Clustering & Plotting
+* Create similarity scores for each document
+* Create similarity dataframe
+* Plot similarity in heatmap
+* Plot clustering in scatterplot
+* Plot vehicle count per year
